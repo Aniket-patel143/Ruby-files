@@ -1,0 +1,38 @@
+rails new MyWebsite (terminal)
+
+cd MyWebsite
+
+rails s (to Run)
+
+rails g controller articles index
+
+ then artical controller in----
+ 
+ class ArticlesController < ApplicationController
+  def index
+  end
+  def about
+  end
+end
+
+then view-artical folder- index and created about html files
+
+then config-routes.rb 
+   Rails.application.routes.draw do
+  get 'articles/index'
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+  # Defines the root path route ("/")
+   root "articles#index"
+   get 'articles/about'
+end
+
+
+layouts- application.html.erb
+
+  in body
+  
+  <a href="artical/about">about</a>
+  
+  
+
