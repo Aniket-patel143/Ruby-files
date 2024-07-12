@@ -1,0 +1,14 @@
+1. rails g model Article title:string body:text
+
+2.rails db:migrate
+
+3.rails c (console in)
+
+4.a= Article.new(title:"first title my",body:"this my body part first") ( for values add )
+
+5.a.save() 
+
+6.Article.all and only type a so show your data
+
+7.a.first and a.last 
+	
