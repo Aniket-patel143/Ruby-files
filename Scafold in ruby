@@ -1,0 +1,7 @@
+rails g scafold Artical title:string body:text
+
+rails db:migrate
+
+rails s
+
+/article
